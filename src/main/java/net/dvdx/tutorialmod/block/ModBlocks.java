@@ -28,7 +28,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
             .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.TUTORIAL_TAB);
 
-    // ORES
+    // ZIRCON ORES
     public static final RegistryObject<Block> ZIRCON_ORE = registerBlock("zircon_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
             .strength(5f).requiresCorrectToolForDrops(), UniformInt.of(3, 7)), ModCreativeModeTab.TUTORIAL_TAB);
@@ -42,7 +42,7 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
             .strength(7f).requiresCorrectToolForDrops(), UniformInt.of(4, 8)), ModCreativeModeTab.TUTORIAL_TAB);
 
-
+// HAHA YESYES
 
 
 
