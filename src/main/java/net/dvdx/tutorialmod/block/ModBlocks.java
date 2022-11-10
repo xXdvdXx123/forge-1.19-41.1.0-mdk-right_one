@@ -1,6 +1,7 @@
 package net.dvdx.tutorialmod.block;
 
 import net.dvdx.tutorialmod.TutorialMod;
+import net.dvdx.tutorialmod.block.custom.JumpyBlock;
 import net.dvdx.tutorialmod.item.ModCreativeModeTab;
 import net.dvdx.tutorialmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -41,6 +42,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> ENDSTONE_ZIRCON_ORE = registerBlock("endstone_zircon_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
             .strength(7f).requiresCorrectToolForDrops(), UniformInt.of(4, 8)), ModCreativeModeTab.TUTORIAL_TAB);
+
+    // JUMPY BLOCK
+    public static final RegistryObject<Block> JUMPY_BLOCK = registerBlock("jumpy_block",
+            () -> new JumpyBlock(BlockBehaviour.Properties.of(Material.STONE)
+            .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.TUTORIAL_TAB);
 
 // HAHA YESYES
 

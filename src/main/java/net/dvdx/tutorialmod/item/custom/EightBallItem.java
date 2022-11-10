@@ -22,7 +22,7 @@ public class EightBallItem extends Item {
             // output random number
             outputRandomNumber(player);
             // set cooldown
-            player.getCooldowns().addCooldown(this, 20);
+            player.getCooldowns().addCooldown(this, 200);
         }
 
         return super.use(level, player, hand);
