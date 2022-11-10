@@ -1,6 +1,7 @@
 package net.dvdx.tutorialmod.item;
 
 import net.dvdx.tutorialmod.TutorialMod;
+import net.dvdx.tutorialmod.item.custom.EightBallItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -16,8 +17,15 @@ public class ModItems {
     // select all until here
     public static final RegistryObject<Item> RAW_ZIRCON = ITEMS.register("raw_zircon",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)));
+    public static final RegistryObject<Item> EIGHT_BALL = ITEMS.register("eight_ball",
+            () -> new EightBallItem(new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB).stacksTo(1)));
 
-    public static  void register(IEventBus eventBus) {
+
+
+
+
+
+    public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
 
