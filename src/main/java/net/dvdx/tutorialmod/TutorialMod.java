@@ -4,8 +4,6 @@ import com.mojang.logging.LogUtils;
 import net.dvdx.tutorialmod.block.ModBlocks;
 import net.dvdx.tutorialmod.item.ModItems;
 import net.dvdx.tutorialmod.villager.ModVillagers;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
-import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

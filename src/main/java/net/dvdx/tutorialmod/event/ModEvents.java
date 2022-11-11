@@ -18,7 +18,7 @@ import java.util.List;
 @Mod.EventBusSubscriber(modid = TutorialMod.MOD_ID)
 public class ModEvents {
     @SubscribeEvent
-    public static void addCustonTrades(VillagerTradesEvent event) {
+    public static void addCustomTrades(VillagerTradesEvent event) {
         if(event.getType() == VillagerProfession.TOOLSMITH) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             // trades \/
@@ -29,7 +29,7 @@ public class ModEvents {
                     new ItemStack(Items.EMERALD, 2),
                     stack, 10, 8, 0.02f));
         }
-        if(event.getType() == ModVillagers.JUMP_MASTER.get()) {
+        if(event.getType() == ModVillagers.JUMPY_MASTER.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             // trades \/
             ItemStack stack = new ItemStack(ModItems.BLUEBERRY.get(), 15);
