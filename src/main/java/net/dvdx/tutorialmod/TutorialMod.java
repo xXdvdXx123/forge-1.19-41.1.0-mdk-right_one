@@ -5,6 +5,8 @@ import net.dvdx.tutorialmod.block.ModBlocks;
 import net.dvdx.tutorialmod.item.ModItems;
 import net.dvdx.tutorialmod.painting.ModPaintings;
 import net.dvdx.tutorialmod.villager.ModVillagers;
+import net.dvdx.tutorialmod.world.feature.ModConfiguredFeatures;
+import net.dvdx.tutorialmod.world.feature.ModPlacedFeatures;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -28,6 +30,8 @@ public class TutorialMod {
         ModBlocks.register(modEventBus);
         ModVillagers.register(modEventBus);
         ModPaintings.register(modEventBus);
+        ModConfiguredFeatures.register(modEventBus);
+        ModPlacedFeatures.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
