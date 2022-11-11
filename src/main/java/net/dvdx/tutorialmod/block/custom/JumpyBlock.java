@@ -33,7 +33,7 @@ public class JumpyBlock extends Block {
     @Override
     public void stepOn(Level level, BlockPos blockPos, BlockState blockState, Entity entity) {
         if (entity instanceof LivingEntity livingEntity) {
-            livingEntity.addEffect(new MobEffectInstance(MobEffects.JUMP, 200, 10, true, true)); // in order: Duration, Amplifier, DisplayTransparentParticles, ShowParticles
+            livingEntity.addEffect(new MobEffectInstance(MobEffects.JUMP, 5, 10, true, true)); // in order: Duration, Amplifier, DisplayTransparentParticles, ShowParticles
         }
 
 
