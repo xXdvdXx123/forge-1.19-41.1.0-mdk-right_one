@@ -16,5 +16,8 @@
 
   "entity.minecraft.villager.tutorialmod.jumpy_master": "Master Jumper",
 
+  "key.category.tutorialmod.tutorial": "Tutorial Mod Category",
+  "key.tutorialmod.water": "Drink Water",
+
   "itemGroup.tutorialtab": "Tutorial Mod"
 }
